@@ -1,23 +1,3 @@
-import java.util.Scanner;
-
-public class SistemaDeportivo {
-    public static void main(String[] args) {
-
-        try {
-            Scanner scanner = new Scanner(System.in);
-
-            System.out.print("Ingrese el nombre del participante: ");
-            String nombre = scanner.nextLine();
-
-            System.out.print("Ingrese la edad del participante: ");
-            int edad = scanner.nextInt();
-
-            Deportista participante = new Deportista(nombre, edad);
-
-            System.out.print("Ingrese el nombre de la disciplina: ");
-            String nombreDisciplina = scanner.next();
-
-
             System.out.print("Del 1 al 10 que tanto le gusta este deporte: ");
             int aptitud1Disciplina = scanner.nextInt();
 
@@ -26,6 +6,13 @@ public class SistemaDeportivo {
 
             System.out.print("Del 1 al 10 que tanto le gustaria practicar este deporte: ");
             int aptitud3Disciplina = scanner.nextInt();
+
+
+            System.out.print("Numero de sanciones: ");
+            int sancionesDiciplina = scanner.nextInt();
+
+            System.out.print("Se realizaron los examenes 2023 (Y/N): ");
+            String examenesDisciplina = scanner.next();
 
 
 
@@ -44,6 +31,7 @@ public class SistemaDeportivo {
                 System.out.println("El participante no cumple con los requisitos de aptitud en la disciplina.");
                 return;
             }
+
 
 
 
