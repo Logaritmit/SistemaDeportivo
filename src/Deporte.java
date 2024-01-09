@@ -1,3 +1,5 @@
+
+
 import java.util.Scanner;
 
 class Deportista {
@@ -25,7 +27,9 @@ class Deportista {
 
 class Disciplina {
     private String nombre;
-    public int aptitud, aptitud1, aptitud2, aptitud3;
+    public int aptitud1, aptitud2, aptitud3;
+    public int sanciones=0;
+    public String examenes= "Y";
 
 
 
@@ -43,15 +47,17 @@ class Disciplina {
         this.aptitud1 = aptitud1;
         this.aptitud2 = aptitud2;
         this.aptitud3 = aptitud3;
-        aptitud = aptitud1 + aptitud2 + aptitud3;
-        this.aptitud = aptitud;
+        if (sanciones !=0){
+            return false;
+        }
+        if (examenes != "Y"){
+            return false;
+        }
+
 
 
         return true;
     }
 }
-
-
-
 
 
